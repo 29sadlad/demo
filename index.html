@@ -1,157 +1,172 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"
+        ></script>
+        
+        
+        <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"
+        ></script>
+
+        
+        
     </head>
-
-    <body>
-        <a-scene>
-            <a-plane
-            position="0 0 -4" rotation="-90 0 0" width="100" height="100" 
-            src="https://tse2.mm.bing.net/th/id/OIP.vKOIPo0FromAh9uwZ0hqaAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3">
-        </a-plane>
-
-            <a-sphere position="0 1 -5" src="https://thf.bing.com/th/id/OIP.p-oW7gjPvDYMgZ7fq_cqiAHaHa?w=171&h=180&c=7&r=0&o=7&cb=thfc1&pid=1.7&rm=3"
-              animation="
-                property: position;
-                from: 0 1 -15;
-                to: 15 6 -5;
-                dur: 1600;
-                loop: true;
-                dir: alternate;  "
-                animation__2="property: rotation;
-                from: 0 0 -90;
-                to: 0 0 90;
-                dur: 200;
-                loop: true;
-                dir: alternate;
-                easeout:linear;
-                
-                "
-                animation__3="property: scale;
-                from: 1;
-                to: 0;
-                dur: 1000;
-                startEvents:click;
-                "
-                >
-                  </a-sphere>
-                  
-                  <a-box position="4 1.4 -5" depth="2" height="2" width="2" src="https://th.bing.com/th/id/R.7af163ff2fa6dd7121998b8dd596d5ad?rik=f1P3vBUsahq7WQ&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f130000%2fvelka%2fcarbon-metallic-backing-paper.jpg&ehk=VbDgIsbslkLpCnry4%2fZDz%2fJEKM0Pn7LIXTakjmrrZUA%3d&risl=&pid=ImgRaw&r=0"
-                animation="
-                property: position;
-                from: 4 1.4 -5;
-                to: -15 3 -20;
-                dur: 2000;
-                loop: true;
-                dir: alternate;"
-                animation__2="property: rotation;
-                from: 0 0 90;
-                to: 5 5 -90;
-                dur: 1200;
-                loop: true;
-                dir: alternate;
-                easeout:bounce;
-                "
-                animation__3="property: scale;
-                from: 1;
-                to: 0;
-                dur: 1000;
-                startEvents:click;
-                "
-                ></a-box>
-                
-                <a-cone color="black" radius-bottom="1" radius-top="0.0001" height="2" position="0 5 10"
-                animation="property: rotation;
-                from: 180 0 0;
-                to: -180 0 0;
-                dur: 2000;
-                loop: true;
-                dir: alternate
-                "
-                animation__2="property: position;
-                from: 0 5 10;
-                to: -10 25 -90;
-                dur: 3000;
-                loop: true;
-                dir: alternate;
-                easeinout:elastic;
-               
-                
-                "
-                animation__3="property: scale;
-                from: 1;
-                to: 0;
-                dur: 2000;
-                startEvents:click;
-               
-                "
-                ></a-cone>
-                
-                <a-torus color="black" arc="360" radius="1" radius-tubular="0.1" position="0 2 -4"
-                
-                animation="property: rotation;
-                from: 180 0 0;
-                to: -180 0 0;
-                dur: 2000;
-                loop: true;
-                dir: alternate
-                "
-                
-                animation__2="property: position;
-                from: 0 2 -4;
-                to: -10 12 24;
-                dur: 1299;
-                loop: true;
-                dir: alternate;
-                easeout:quad;
-               
-                
-                "
-                                animation__3="property: scale;
-                from: 1;
-                to: 0;
-                dur: 2000;
-                startEvents:click;
-               
-                "
-                
-                ></a-torus>
-
-
-                <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="black"
-                
-                animation="property: rotation;
-                from: 180 0 0;
-                to: -180 0 0;
-                dur: 2000;
-                loop: true;
-                dir: alternate
-                "
-                
-                animation__2="property: position;
-                from: 5 1 -5;
-                to: -15 20 10;
-                dur: 2569;
-                loop: true;
-                dir: alternate;
-                easein:cubic;
-               
-                
-                "
-                                animation__3="property: scale;
-                from: 1;
-                to: 0;
-                dur: 2000;
-                startEvents:click;
-               
-                "
-                ></a-cylinder>
-
-                
-                
-                
-            <a-camera> <a-cursor> </a-cursor></a-camera>
+      <body>
+        <a-scene physics="debug:true; gravity: -8">
             
+            
+            
+            
+            
+            <a-plane position="0 0 -4"
+            rotation="-90 0 0"
+            width="100"
+            height="100"
+            src="https://codehs.com/uploads/b196555a1ee347c8221ffcb228f94222"
+            static-body
+            ></a-plane>
+   
+   
+            <a-sphere 
+            position="1.4 12 -10"
+            radius="0.5"
+            src="https://codehs.com/uploads/a64bdcae11a00483b1a5b1d300eee936"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-sphere>
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+
+     
+     
+            <a-box
+            position="3 2.5 -10"
+            depth="1"
+            height="3"
+            width="0.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+            
+            
+            <a-box
+            position="5 2.5 -10"
+            depth="1"
+            height="3"
+            width="0.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+            
+            
+            <a-box
+            position="7 2.5 -10"
+            depth="1"
+            height="3"
+            width="0.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+            
+            
+            
+            <a-box
+            position="9 2.5 -10"
+            depth="1"
+            height="3"
+            width="0.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+            
+            
+            <a-box
+            position="10 2.5 -10"
+            depth="1"
+            height="3"
+            width="0.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+     
+     
+    
+   
+            <a-box position="0 0.5 -10" 
+            depth="0.5"
+            height="0.5"
+            width="0.5"
+            color="black"
+            static-body
+            ></a-box>
+   
+   
+   
+            <a-box position="12 0.5 -11" 
+            depth="0.5"
+            height="0.5"
+            width="0.5"
+            color="black"
+            static-body
+            ></a-box>
+   
+   
+   
+   
+
+   
+   
+            <a-box
+            position="0 1 -10"
+            depth="1"
+            height="0.2"
+            width="3.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+   
+   
+            <a-box
+            position="12 1 -11"
+            depth="1"
+            height="0.2"
+            width="3.25"
+            src="https://codehs.com/uploads/9bead891fd9e943aad826f54a9b9f931"
+            dynamic-body
+            rotation="0 90 0"
+            ></a-box>
+            
+            <a-box 
+            position=" 12 2 -11"
+            depth=".25"
+            height=".25"
+            width=".25"
+            src="https://codehs.com/uploads/a64bdcae11a00483b1a5b1d300eee936"
+            dynamic-body
+            rotation="0 0 0"
+            ></a-box>
+   
+           
+   
+   
+            <a-sky src="https://codehs.com/uploads/4f5c9c74d01d9423685200a34378c104"
+            ></a-sky>
+   
         </a-scene>
     </body>
 </html>
